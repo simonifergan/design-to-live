@@ -33,7 +33,37 @@ a:hover { color: red}
 
 /* Modal */
 
+.modal-screen {
+    z-index: 1;
+    background-color: #5c5959da;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s;
+}
 
+.modal-screen.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.blog-modal {
+    position: fixed;
+    background-color: #c2c2c2;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 750px) {
+    .blog-modal {
+        width: 50vw;
+        height: 50vh;
+    }
+}
 /* Header */
 
 .main-header {
@@ -69,6 +99,7 @@ a:hover { color: red}
     opacity: 0;
     visibility: hidden;
     background-color: #c2c2c2da;
+
     transition: all .8s;
 }
 
@@ -79,7 +110,7 @@ a:hover { color: red}
 }
 
 .nav-link {
-    margin: 5px 200px;
+    margin: 5px 20px;
     height: 50px;
     border: 1px solid #ffffff;
     background-color: #292929;
@@ -131,18 +162,21 @@ a:hover { color: red}
         position: static;
         height: auto;
         width: auto;
-        background-color: #292929;
+        background: none;
         visibility: visible;
         opacity: 1;
+    }
+    .main-nav.show {
+        height: auto;
     }
     .nav-link {
         border: none;
         margin: auto;
         font-size: 1em;
         width: 130px;
-        box-shadow: -1px 0 0 #1d1d1d;
         height: 130px;
         color: inherit;
+        box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #1e1e1e;
         text-shadow: 0 1px 0 #1e1e1e;
         font-family: Lato, serif;
         font-weight: 700;
@@ -153,7 +187,7 @@ a:hover { color: red}
         box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a;
     }
     .nav-link:last-child {
-        box-shadow: -1px 0 0 #1d1d1d, inset -1px 0 0 #1d1d1d;
+        box-shadow: -1px 0 0 #1d1d1d, inset -1px 0 0 #1d1d1d, inset 0 -6px 0 #1e1e1e;;
     }
     .nav-link:last-child:hover {
         box-shadow: -1px 0 0 #1d1d1d, inset -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a;
