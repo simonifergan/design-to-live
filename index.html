@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Blogin</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header flex space-between align-center">
+        <h1 class="logo logo-header">
+            <a href="#"><span class="logo-letter-spacing">B</span>login<span class="span-logo-dot logo-letter-spacing">.</span></a>
+        </h1>
+        <!-- Nav bar -->
+        <nav class="main-nav flex">
+            <a class="nav-link flex justify-center align-center" href="#"><span class="link-first-letter">J</span>ournal</a>
+            <a class="nav-link flex justify-center align-center" href="#"><span class="link-first-letter">A</span>bout</a>
+            <a class="nav-link flex justify-center align-center" href="#"><span class="link-first-letter">W</span>ork</a>
+            <a class="nav-link flex justify-center align-center" href="#"><span class="link-first-letter">C</span>ontact</a>
+        </nav>
+        <button onclick="toggleNav()" class="btn-toggle-nav">☰</button>
+    </header>
+
+    <!-- Main -->
+    <main class="blog-container flex column">
+        <div class="blog-item flex">
+            <img class="blog-image" src="img/001.jpg">
+            <div class="blog-info flex column space-between">
+                <h1 class="blog-title"><span class="blog-title-intro">Duis aute</span> irure dolor in henderit in voluptate.</h1>
+                <div class="blog-txt">
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <button class="btn-continue">Continue Reading</button>
+            </div>
+        </div>
+        <div class="blog-item flex">
+            <img class="blog-image" src="img/002.jpg">
+            <div class="blog-info flex column space-between">
+                <h1 class="blog-title"><span class="blog-title-intro">Duis aute</span> irure dolor in henderit in voluptate.</h1>
+                <div class="blog-txt">
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <button class="btn-continue">Continue Reading</button>
+            </div>
+        </div>
+        <div class="blog-item flex">
+            <img class="blog-image" src="img/003.jpg">
+            <div class="blog-info flex column space-between">
+                <h1 class="blog-title"><span class="blog-title-intro">Duis aute</span> irure dolor in henderit in voluptate.</h1>
+                <div class="blog-txt">
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <button class="btn-continue">Continue Reading</button>
+            </div>
+        </div>
+
+       
+
+        <div class="btn-page-container flex space-between">
+            <button class="btn-page-select">&larr; Previous</button>
+            <button class="btn-page-select">Next &rarr;</button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer flex column align-center justify-center space-even">
+        <h1 class="logo logo-footer">
+            <a href="/"><span class="logo-letter-spacing">B</span>login<span class="span-logo-dot logo-letter-spacing">.</span></a>
+        </h1>
+        <div class="footer-text">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <a href="#" class="footer-link">Pixelhint.com</a></div>
+        <div class="social-media-container flex justify-center align-center space-between">
+            <a href="#" class="social-media-link"><img src="img/icons/fb.png" alt=""></a>
+            <a href="#" class="social-media-link"><img src="img/icons/twitter.png" alt=""></a>
+            <a href="#" class="social-media-link"><img src="img/icons/be.png" alt=""></a>
+            <a href="#" class="social-media-link"><img src="img/icons/d.png" alt=""></a>
+        </div>
+
+
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.querySelector('.main-nav').classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
