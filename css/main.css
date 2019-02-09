@@ -42,7 +42,6 @@ a:hover { color: red}
     width: 100%;
 }
 
-
 .logo {
     font-family: Eurofurence, serif;
     font-size: 40px;
@@ -53,6 +52,7 @@ a:hover { color: red}
 .logo a {
     color: inherit;
 }
+
 .span-logo-dot {
     color: #58c93a;
 }
@@ -65,7 +65,7 @@ a:hover { color: red}
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    background-color: #c2c2c2;
+    background-color: #c2c2c2da;
     transition: all .8s;
 }
 
@@ -76,20 +76,23 @@ a:hover { color: red}
 }
 
 .nav-link {
-    box-shadow: -1px 0 0 #1d1d1d;
+    margin: 20px 200px;
+    border: 1px solid #ffffff;
+    background-color: #292929;
     color: inherit;
     text-shadow: 0 1px 0 #1e1e1e;
     font-family: Lato, serif;
     font-weight: 700;
+    font-size: 2em;
     transition: all .3s;
 }
 
 .nav-link:hover {
     color: #58c93a;
-    box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a;
 }
 
 .btn-toggle-nav {
+    cursor: pointer;
     display: block;
     border: none;
     background: none;
@@ -129,6 +132,8 @@ a:hover { color: red}
         opacity: 1;
     }
     .nav-link {
+        margin: auto;
+        font-size: 1em;
         width: 130px;
         box-shadow: -1px 0 0 #1d1d1d;
         height: 130px;
@@ -137,6 +142,10 @@ a:hover { color: red}
         font-family: Lato, serif;
         font-weight: 700;
         transition: all .3s;
+    }
+    .nav-link:hover {
+        color: #58c93a;
+        box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a;
     }
     .nav-link:last-child {
         box-shadow: -1px 0 0 #1d1d1d, inset -1px 0 0 #1d1d1d;
@@ -290,7 +299,6 @@ a:hover { color: red}
     }
 
 }
-
 @media (min-width: 960px) {
  
     .blog-txt {
@@ -302,7 +310,6 @@ a:hover { color: red}
         margin-bottom: 30px;
     }
 }
-
 @media (min-width: 1230px) {
     .blog-container {
         margin: 0 150px;
