@@ -211,6 +211,43 @@ a:hover { color: red}
     }
 }
 
+/* Navbar Dropdown Menu */
+
+.nav-dropdown-content {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    z-index: 1;
+    opacity: 0;
+    width: 130px;
+    transition: all .6s;
+}
+
+.dropdown-link {
+    text-align: center;
+    border-bottom: 1px solid #1d1d1d;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #292929;
+    color: inherit;
+    text-shadow: 0 1px 0 #1e1e1e;
+    font-family: Lato, serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.dropdown-link:hover {
+    color: #58c93a;
+}
+
+.nav-link-container:hover .nav-dropdown-content {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* Blog Container */
 
 .blog-container {

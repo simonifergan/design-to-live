@@ -41,12 +41,16 @@
         </h1>
         <!-- Nav bar -->
         <nav class="main-nav flex">
-            <a class="nav-link flex justify-center align-center" href="#"><span class="link-first-letter">J</span>ournal</a>
-            <!-- <div class="journal-dropdown">
-                <a href="#" class="dropdown-link"></a>
-                <a href="#" class="dropdown-link"></a>
-                <a href="#" class="dropdown-link"></a>
-            </div> -->
+            <div class="nav-link-container">
+                <a class="nav-link flex justify-center align-center" href="#"><span class="link-first-letter">J</span>ournal</a>
+                <div class="nav-dropdown-content">
+                    <a href="#" class="dropdown-link">October 2016</a>
+                    <a href="#" class="dropdown-link">January 2017</a>
+                    <a href="#" class="dropdown-link">April 2017</a>
+                    <a href="#" class="dropdown-link">July 2017</a>
+                </div>
+            </div>
+        
             <a class="nav-link flex justify-center align-center" href="#"><span class="link-first-letter">A</span>bout</a>
             <a class="nav-link flex justify-center align-center" href="#"><span class="link-first-letter">W</span>ork</a>
             <a class="nav-link flex justify-center align-center" href="#"><span class="link-first-letter">C</span>ontact</a>
@@ -142,6 +146,7 @@
     </footer>
 
     <script>
+
         function toggleNav() {
             document.querySelector('.main-nav').classList.toggle('show');
         }
@@ -152,8 +157,8 @@
 
         function closeModal(ev) {
             document.querySelector('.modal-screen').classList.remove('show');
-
         }
+
     </script>
 </body>
 
