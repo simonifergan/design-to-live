@@ -70,8 +70,33 @@ a:hover { color: red}
     margin: 5px 5px;
 }
 
+.modal-title {
+    text-align: center;
+}
+
 .blog-modal p {
     margin: 5px 20px;
+}
+
+.btn-modal-close {
+    width: 180px;
+    height: 45px;
+    border: 2px solid #1d1d1d;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin: 0px;
+    cursor: pointer;
+    color: #1d1d1d;
+    font-family: Lato-Regular, serif;
+    font-weight: 700;
+    line-height: 20px;
+    outline: none;
+    transition: all .3s;
+}
+
+.btn-modal-close:hover {
+    border: 2px solid #58c93a;
+    color: #58c93a; 
 }
 
 @media (min-width: 750px) {
@@ -195,7 +220,7 @@ a:hover { color: red}
         border: none;
         margin: auto;
         font-size: 1em;
-        width: 130px;
+        width: 100px;
         height: 130px;
         color: inherit;
         box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #1e1e1e;
@@ -214,9 +239,6 @@ a:hover { color: red}
     .nav-link:last-child:hover {
         box-shadow: -1px 0 0 #1d1d1d, inset -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a;
     }
-}
-
-@media (min-width: 750px) {
     .logo-header {
         margin-left: 1em;
         padding: 0;
@@ -224,6 +246,11 @@ a:hover { color: red}
     .main-nav {
         margin-right: 1em;
         padding-right: 1.250em;
+    }
+}
+@media (min-width: 1200px) {
+    .nav-link {
+        width: 130px;
     }
 }
 
@@ -279,7 +306,7 @@ a:hover { color: red}
         z-index: 1;
         opacity: 0;
         width: 130px;
-        transition: all .6s;
+        transition: opacity .6s;
     }
     .nav-dropdown-content.show {
         visibility: hidden;
@@ -419,7 +446,7 @@ a:hover { color: red}
         margin: 0;
     }
     .blog-title {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
     .blog-txt {
         margin-bottom: 45px;
@@ -457,11 +484,19 @@ a:hover { color: red}
         padding: 0;
     }
    
-
+    .blog-txt {
+        margin-bottom: 20px;
+    }
 }
 @media (min-width: 1200px) {
     .blog-container {
         margin: 0 1em;
+    }
+    .blog-title {
+        margin-bottom: 60px;
+    }
+    .blog-txt {
+        margin-bottom: 45px;
     }
 }
 
