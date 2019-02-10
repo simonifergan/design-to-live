@@ -325,7 +325,6 @@ a:hover { color: red}
     padding: 5px;
     margin-bottom: 30px;
     flex-direction: column;
-    box-shadow: 0 0 5px 1px black;
 }
 
 .blog-item:first-child {
