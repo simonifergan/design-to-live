@@ -160,7 +160,7 @@ a:hover { color: red}
     font-weight: 700;
     font-size: 24px;
     outline:none;
-    margin-right: 1em;
+    margin-right: 0.30em;
     transition: all .3s;
 }
 .btn-toggle-nav:hover {
