@@ -73,6 +73,8 @@ a:hover { color: red}
 
 .modal-title {
     text-align: center;
+    font-size: 1.750em;
+    text-transform: uppercase;
 }
 
 .blog-modal p {
@@ -442,7 +444,7 @@ a:hover { color: red}
         margin: 0;
     }
     .blog-title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     .blog-txt {
         margin-bottom: 45px;
@@ -477,6 +479,10 @@ a:hover { color: red}
     .blog-item:first-child {
         margin: 80px 0;
     }
+    .blog-title {
+        margin-bottom: 50px;
+    }
+
     .blog-image {
         width: 100%;
         object-fit: contain;
