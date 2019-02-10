@@ -403,7 +403,7 @@ a:hover { color: red}
     text-transform: uppercase;
     background: none;
     border: none;
-    margin: 30px 30px;
+    margin: 30px 0px;
     outline: none;
     cursor: pointer;
 }
@@ -427,6 +427,9 @@ a:hover { color: red}
     .btn-continue {
         margin: 0;
         height: 45px;
+    }
+    .btn-page-select {
+        margin: 30px 30px;
     }
 }
 @media (min-width: 860px) {
@@ -470,6 +473,10 @@ a:hover { color: red}
     background-color: #f8f8f8;
 }
 
+.logo-footer { 
+    margin-bottom: 30px;
+}
+
 .footer-text {
     height: 10px;
     color: #a6a6a6;
@@ -477,6 +484,7 @@ a:hover { color: red}
     font-size: 0.813em;
     font-weight: 400;
     line-height: 20px;
+    margin-bottom: 40px;
 }
 
 .footer-link {
@@ -502,10 +510,22 @@ a:hover { color: red}
     justify-content: center;
     align-items: center;
     transition: background-color .3s;
-
 }
-.social-media-container a:hover {
+
+.social-media-link.fb:hover {
     background-color: #516fad;
+}
+
+.social-media-link.twitter:hover {
+    background-color: #1da1f2;
+}
+
+.social-media-link.be:hover {
+    background-color: #105bf2;
+}
+
+.social-media-link.dribble:hover {
+    background-color: #e54786;
 }
 
 /*------------ Helpers -------------- */
