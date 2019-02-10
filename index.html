@@ -12,24 +12,30 @@
 <body>
 
     <!-- Modal -->
-    <aside class="modal-screen flex justify-center align-center" onclick="closeModal()">
-        <div class="blog-modal flex column" onclick="event.stopPropagation()">
-            <div class="blog-info flex column">
-                <h1 class="blog-title"><span class="blog-title-intro">Duis aute</span> irure dolor in henderit in
-                    voluptate.</h1>
-                <div class="flex column">
-                    <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commo doconsequat,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur...
-                    </p>
-                    <button class="btn-modal-close btn-continue" onclick="toggleModal()">Close</button>
-                </div>
+    <aside class="modal-screen" onclick="closeModal()">
+        <div class="blog-modal flex column align-center" onclick="event.stopPropagation()">
+            <h1 class="modal-title">Duis aute irure dolor in henderit involuptate.</h1>
+            <div class="modal-text flex column justify-center align-center">
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commo doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur
+                </p>
             </div>
+            <button class="btn-modal-close" onclick="toggleModal()">Close</button>
+        </div>
         </div>
     </aside>
 
@@ -43,8 +49,9 @@
             <!-- Nav bar -->
             <nav class="main-nav flex">
                 <div class="nav-link-container">
-                    <a class="nav-link flex justify-center align-center" href="#"><span
-                            class="link-first-letter">J</span>ournal</a>
+                    <a onclick="toggleDropdownMenu()" class="nav-link flex justify-center align-center" href="#">
+                        <span class="link-first-letter">J</span>ournal
+                    </a>
                     <div class="nav-dropdown-content">
                         <a href="#" class="dropdown-link">October 2016</a>
                         <a href="#" class="dropdown-link">January 2017</a>
@@ -52,7 +59,7 @@
                         <a href="#" class="dropdown-link">July 2017</a>
                     </div>
                 </div>
-    
+
                 <a class="nav-link flex justify-center align-center" href="#"><span
                         class="link-first-letter">A</span>bout</a>
                 <a class="nav-link flex justify-center align-center" href="#"><span
@@ -164,6 +171,10 @@
 
         function closeModal(ev) {
             document.querySelector('.modal-screen').classList.remove('show');
+        }
+
+        function toggleDropdownMenu() {
+            document.querySelector('.nav-dropdown-content').classList.toggle('show');
         }
 
     </script>
