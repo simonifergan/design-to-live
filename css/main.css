@@ -413,10 +413,6 @@ a:hover { color: red}
     background-color: #ffffff;
 }
 
-.btn-continue:hover::after {
-    content: "  →";
-}
-
 .btn-page-container {
     border-top: 1px solid #e1e0e0;
     width: 100%;
@@ -457,6 +453,9 @@ a:hover { color: red}
     }
     .btn-page-select {
         margin: 30px 30px;
+    }
+    .btn-continue:hover::after {
+        content: "  →";
     }
 }
 @media (min-width: 860px) {
