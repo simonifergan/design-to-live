@@ -268,7 +268,7 @@ a:hover { color: red}
     visibility: hidden;
     opacity: 0;
     background-color: #1d1d1d;
-    width: 60%;
+    width: 80%;
     transition: opacity .3s;
 }
 
@@ -281,7 +281,6 @@ a:hover { color: red}
 .dropdown-link {
     text-align: center;
     border-bottom: 1px solid #1d1d1d;
-    padding: 5px 0;
     width: 100%;
     background-color: #292929;
     color: inherit;
@@ -442,6 +441,7 @@ a:hover { color: red}
     }
     .blog-image {
         margin: 0;
+        margin-bottom: 20px;
     }
     .blog-title {
         margin-bottom: 30px;
