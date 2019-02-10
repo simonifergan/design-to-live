@@ -138,7 +138,7 @@ a:hover { color: red}
     background-color: #292929;
     color: inherit;
     text-shadow: 0 1px 0 #1e1e1e;
-    font-family: Lato, serif;
+    font-family: Lato-Regular, sans-serif;
     font-weight: 700;
     font-size: 2em;
     transition: all .3s;
@@ -156,7 +156,7 @@ a:hover { color: red}
     border: 1px solid #1d1d1d;
     color: inherit;
     text-shadow: 0 1px 0 #1e1e1e;
-    font-family: Lato, serif;
+    font-family: Lato-Regular, sans-serif;
     font-weight: 700;
     font-size: 24px;
     outline:none;
@@ -200,7 +200,7 @@ a:hover { color: red}
         color: inherit;
         box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #1e1e1e;
         text-shadow: 0 1px 0 #1e1e1e;
-        font-family: Lato, serif;
+        font-family: Lato-Regular, sans-serif;
         font-weight: 700;
         transition: all .3s;
     }
@@ -239,7 +239,7 @@ a:hover { color: red}
     opacity: 0;
     background-color: #1d1d1d;
     width: 60%;
-    transition: all .3s;
+    transition: opacity .3s;
 }
 
 .nav-dropdown-content.show {
@@ -256,7 +256,7 @@ a:hover { color: red}
     background-color: #292929;
     color: inherit;
     text-shadow: 0 1px 0 #1e1e1e;
-    font-family: Lato, serif;
+    font-family: Lato-Regular, sans-serif;
     font-weight: 700;
     font-size: 0.75em;
 }
@@ -292,7 +292,7 @@ a:hover { color: red}
         background-color: #292929;
         color: inherit;
         text-shadow: 0 1px 0 #1e1e1e;
-        font-family: Lato, serif;
+        font-family: Lato-Regular, sans-serif;
         font-weight: 700;
         font-size: 0.75em;
     }
@@ -312,7 +312,7 @@ a:hover { color: red}
 
 .blog-container {
     background-color: #ffffff;
-    font-family: Lato, serif;
+    font-family: Lato-Regular, sans-serif;
     margin: 0 1em;
     justify-content: center;
 }
@@ -328,7 +328,6 @@ a:hover { color: red}
     box-shadow: 0 0 5px 1px black;
 }
 
-
 .blog-item:first-child {
     margin-top: 90px;
 }
@@ -337,14 +336,13 @@ a:hover { color: red}
     margin-top: 30px;
 }
 
-
 .blog-image {
     object-fit: cover;
     margin-bottom: 30px;
 }
 
 .blog-title {
-    font-family: Lato, serif;
+    font-family: Lato-Regular, sans-serif;
     height: 50px;
     color: #4f4e4e;
     font-size: 1.750em;
@@ -355,12 +353,11 @@ a:hover { color: red}
 }
 
 .blog-txt {
-    margin-bottom: 60px;
-    height: 85px;
+    margin-bottom: 20px;
+    /* height: 85px; */
     color: #606060;
     font-weight: 400;
     line-height: 20px;
-    margin-right: 25px;
 }
 
 .blog-txt p:first-child {
@@ -369,15 +366,14 @@ a:hover { color: red}
 
 .btn-continue {
     width: 180px;
-    height: 40px;
+    height: 45px;
     border: 2px solid #c2c2c2;
     background-color: #ffffff;
     border-radius: 40px;
     margin: 0px;
-    margin-bottom: 20px;
     cursor: pointer;
     color: #c2c1c1;
-    font-family: Lato, serif;
+    font-family: Lato-Regular, serif;
     font-weight: 700;
     line-height: 20px;
     outline: none;
@@ -402,7 +398,7 @@ a:hover { color: red}
 
 .btn-page-select {
     color: #818181;
-    font-family: Lato;
+    font-family: Lato-Regular, sans-serif;
     font-size: 1.125em;
     font-weight: 700;
     text-transform: uppercase;
@@ -414,11 +410,24 @@ a:hover { color: red}
 }
 
 @media (min-width: 750px) {
+    .blog-item {
+        padding: 0;
+    }
     .blog-image:first-child {
         margin-top: 0;
     }
+    .blog-image {
+        margin: 0;
+    }
+    .blog-title {
+        margin-bottom: 60px;
+    }
     .blog-txt {
         margin-bottom: 45px;
+    }
+    .btn-continue {
+        margin: 0;
+        height: 45px;
     }
 }
 @media (min-width: 860px) {
@@ -439,16 +448,13 @@ a:hover { color: red}
     }
     .blog-image {
         width: 100%;
-        height: auto;
         object-fit: contain;
         margin-bottom: none;
         margin-right: 30px;
         margin-left: 20px;
         padding: 0;
     }
-    .btn-continue {
-        margin: 0;
-    }
+   
 
 }
 @media (min-width: 1200px) {
@@ -468,7 +474,7 @@ a:hover { color: red}
 .footer-text {
     height: 10px;
     color: #a6a6a6;
-    font-family: Lato;
+    font-family: Lato-Regular, sans-serif;
     font-size: 0.813em;
     font-weight: 400;
     line-height: 20px;
